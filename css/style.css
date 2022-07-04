@@ -1,0 +1,63 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+label{
+    font-size:1.2rem;
+    font-weight:bold;
+}
+#budgetAlert{
+letter-spacing: 0.25rem;
+}
+.icon {
+  font-size: 2.5rem;
+  color: #05668d;
+}
+.budget,.expense,.info-title,.balance{
+    font-size:2rem;
+    letter-spacing: 0.02rem;
+}
+.icon-edit,.icon-delete{cursor: pointer;}
+.icon-edit{
+    color: green;
+}
+.icon-delete{color: red;}
+@media screen and (max-width :575.98px)
+{
+.container
+{
+    width:95% !important;
+}
+.budget,.expense,.info-title,.balance{
+    font-size:1.5rem;
+
+}
+}
+@media screen and (min-width :576px) and (max-width :767.98px)
+{
+    .budget,.expense,.info-title,.balance{
+        font-size:1.5rem;
+
+    }
+
+}
+@media screen and (min-width :768px) and (max-width :991.98px)
+{
+    .budget,.expense,.info-title,.balance{
+        font-size:1.2rem;
+        letter-spacing: 0.02rem;
+
+    }
+    .title{
+        font-size:1.2rem !important;
+    }
+}
+@media screen and (min-width :992px) and (max-width :1199.98px)
+{
+    .budget,.expense,.info-title,.balance{
+        font-size:1.7rem;
+
+    }
+}

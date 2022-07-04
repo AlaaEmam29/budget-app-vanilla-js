@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget App</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <main class="container pt-3">
+        <h1 class="text-uppercase py-3">budget app</h1>
+        <div class="row gx-5">
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col-12 mb-4">
+                        <div id="budgetAlert" class="form-text alert alert-danger p-3  d-none ">Budget shouldn't be
+                            negative or empty</div>
+
+                        <form id="budgetForm" class="border border-success p-3 border-3">
+                            <div class="mb-3">
+                                <label class="form-label">Please Enter Your Budget
+                                </label>
+                                <input type="number" id="budgetInput" class="form-control border border-success">
+                            </div>
+                            <button type="submit"  class="btn btn-outline-success">calculate</button>
+                        </form>
+                    </div>
+                    <div class="col-12">
+                        <div  id="expenseAlert" class="form-text alert alert-danger p-3  d-none ">Expense shouldn't be
+                            negative or empty</div>
+                        <form  id="expenseForm" class="border border-danger p-3 border-3">
+                            <div class="mb-3">
+                                <label class="form-label">Please Enter Your Expense
+                                </label>
+                                <input type="text" id="expenseInput" class="form-control border border-danger">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Please Enter Expense Amount
+
+                                </label>
+                                <input type="number" id="expenseAmountInput" class="form-control border border-danger">
+                            </div>
+                            <button type="submit"  class="btn btn-outline-danger">Add Expense</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 text-center">
+                <div class="row">
+                    <div class="col-4">
+                        <article>
+                            <h5 class="text-uppercase info-title">budget</h5>
+                            <span class="icon"><i class="fas fa-money-bill-alt"></i></span>
+                            <h3 class="text-uppercase mt-2 budget text-success"><span>$ </span><span
+                                    id="budgetAmount">0</span></h3>
+
+                        </article>
+                    </div>
+                    <div class="col-4">
+                        <article>
+                            <h5 class="text-uppercase info-title">expense</h5>
+                            <span class="icon"><i class="far fa-credit-card"></i></span>
+                            <h3 class="text-uppercase mt-2 expense text-danger"><span>$ </span><span
+                                    id="expenseAmount">0</span></h3>
+
+                        </article>
+                    </div>
+                    <div class="col-4">
+                        <article>
+                            <h5 class="text-uppercase info-title">budget</h5>
+                            <span class="icon"><i class="fas fa-dollar-sign"></i></span>
+                            <h3 class="text-uppercase mt-2 balance"><span>$ </span><span id="balanceAmount">0</span>
+                            </h3>
+
+                        </article>
+                    </div>
+                    <div class="col-12">
+                        <table class="table table-borderless">
+                            <thead>
+                                <tr>
+                                    <th scope="col">
+                                        Expense Title
+                                    </th>
+                                    <th scope="col">
+                                        Expense Value
+                                    </th>
+                                    <th rowspan="2">
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody id="expenseList">
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
